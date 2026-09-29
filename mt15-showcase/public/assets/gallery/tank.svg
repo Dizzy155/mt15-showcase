@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="MT-15 V2 fuel tank concept placeholder">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111318"/><stop offset="1" stop-color="#07080a"/></linearGradient>
+    <pattern id="diag" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="26" fill="#ffffff" opacity="0.03"/></pattern>
+  </defs><rect width="1200" height="800" fill="url(#pbg)"/><rect width="1200" height="800" fill="url(#diag)"/>
+  <g transform="translate(240,210)">
+    <path d="M 40 220 C 120 60 420 20 640 90 C 700 110 720 160 690 200 C 560 260 240 280 40 220 Z" fill="#1a1d22" stroke="#34383f" stroke-width="4"/>
+    <path d="M 90 190 C 190 80 430 50 620 100" stroke="#9aa1ab" stroke-width="5" fill="none" opacity="0.85"/>
+    <text x="330" y="180" font-family="Arial Narrow, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="10" fill="#3f444d">MT</text>
+  </g>
+  <text x="56" y="708" font-family="Arial Narrow, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="8" fill="#e8eaee">FUEL TANK</text>
+  <text x="56" y="748" font-family="Arial, sans-serif" font-size="20" letter-spacing="6" fill="#9aa1ab">10 L · MUSCULAR</text>
+  <text x="1144" y="56" text-anchor="end" font-family="Arial, sans-serif" font-size="13" letter-spacing="2" fill="#6b7280">CONCEPT PLACEHOLDER</text>
+  <g stroke="#3f444d" stroke-width="2">
+    <path d="M 22 48 L 22 22 L 48 22"/>
+    <path d="M 1152 22 L 1178 22 L 1178 48"/>
+    <path d="M 1178 752 L 1178 778 L 1152 778"/>
+    <path d="M 48 778 L 22 778 L 22 752"/>
+  </g>
+</svg>

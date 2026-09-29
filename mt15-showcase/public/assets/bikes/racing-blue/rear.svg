@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="MT-15 V2 rear view concept">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#060a14"/><stop offset="1" stop-color="#07080a"/></linearGradient>
+    <pattern id="diag" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="26" fill="#ffffff" opacity="0.03"/></pattern>
+  </defs><rect width="800" height="600" fill="url(#pbg)"/><rect width="800" height="600" fill="url(#diag)"/>
+  <polygon points="330,180 470,180 452,268 348,268" fill="#123d9e"/>
+  <rect x="352" y="196" width="96" height="16" rx="4" fill="#4d8dff"/>
+  <rect x="384" y="230" width="32" height="20" fill="#2a2e35"/>
+  <line x1="368" y1="268" x2="362" y2="360" stroke="#3a3e45" stroke-width="9"/><line x1="432" y1="268" x2="438" y2="360" stroke="#3a3e45" stroke-width="9"/>
+  <circle cx="400" cy="478" r="92" fill="#0a0b0d" stroke="#26292f" stroke-width="3"/>
+  <circle cx="400" cy="478" r="58" fill="none" stroke="#2a5fd0" stroke-width="5" opacity="0.75"/>
+  <text x="46" y="540" font-family="Arial Narrow, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="6" fill="#e8eaee">REAR</text>
+  <text x="46" y="570" font-family="Arial, sans-serif" font-size="15" letter-spacing="4" fill="#4d8dff">COMPACT LED TAIL</text>
+  <text x="754" y="44" text-anchor="end" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#6b7280">CONCEPT PLACEHOLDER</text>
+  <g stroke="#3f444d" stroke-width="2">
+    <path d="M 22 48 L 22 22 L 48 22"/>
+    <path d="M 752 22 L 778 22 L 778 48"/>
+    <path d="M 778 552 L 778 578 L 752 578"/>
+    <path d="M 48 578 L 22 578 L 22 552"/>
+  </g>
+</svg>
