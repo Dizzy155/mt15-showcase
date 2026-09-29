@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import Reveal from './Reveal';
+
 
 const IMAGES = [
   { src: '/assets/gallery/side.svg', alt: 'MT-15 V2 side profile' },
