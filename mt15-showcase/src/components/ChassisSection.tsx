@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
 import { useVariant } from '../context/VariantContext';
+import type { VariantId } from '../data/variants';
 
 const ITEMS = [
   { label: 'DELTABOX FRAME', text: 'Rigidity exactly where it matters, compliance where it helps.' },
@@ -19,9 +20,18 @@ interface HotspotDef {
 
 const HOTSPOTS: HotspotDef[] = [
   { top: '38%', left: '68%', title: '37MM USD FRONT FORK', text: 'Upside-down stanchions for precise steering response.' },
-    { top: '55%', left: '47%', title: 'DELTABOX FRAME', text: "Yamaha's proven perimeter frame architecture." },
+  { top: '55%', left: '47%', title: 'DELTABOX FRAME', text: "Yamaha's proven perimeter frame architecture." },
   { top: '55%', left: '30%', title: 'LINKED-TYPE MONOCROSS', text: 'Single rear shock with progressive linkage.' },
 ];
+
+/** Hotspot positions [top, left] for fork, frame, rear shock — tuned per photo. */
+const POSITIONS: Record<VariantId, [string, string][]> = {
+  'black': [['50%', '62%'], ['66%', '46%'], ['55%', '33%']],
+  'ice-storm': [['50%', '61%'], ['66%', '46%'], ['55%', '33%']],
+  'monster': [['50%', '60%'], ['66%', '46%'], ['55%', '33%']],
+  'cyan-storm': [['48%', '74%'], ['66%', '54%'], ['56%', '38%']],
+  'racing-blue': [['47%', '73%'], ['66%', '49%'], ['53%', '32%']],
+};
 
 function Hotspot({ h }: { h: HotspotDef }) {
   const [openTip, setOpenTip] = useState(false);
@@ -71,9 +81,10 @@ export default function ChassisSection() {
               className="w-full"
               draggable={false}
             />
-            {HOTSPOTS.map((h) => (
-              <Hotspot key={h.title} h={h} />
-            ))}
+            {HOTSPOTS.map((h, i) => {
+              const [top, left] = POSITIONS[variant.id][i];
+              return <Hotspot key={h.title} h={{ ...h, top, left }} />;
+            })}
           </div>
         </Reveal>
 

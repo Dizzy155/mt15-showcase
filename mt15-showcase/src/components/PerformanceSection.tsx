@@ -17,7 +17,7 @@ export default function PerformanceSection() {
     <section id="performance" className="relative py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 md:px-8 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
-          <div className="overflow-hidden border border-theme">
+          <div className="bg-surface overflow-hidden border border-theme">
             <img
               src={variant.images.side}
               alt={`MT-15 V2 side profile — ${variant.name}`}

@@ -11,7 +11,7 @@ export default function HeadlightSection() {
         <Reveal>
           <div className={`border-theme relative overflow-hidden border transition-opacity duration-700 ${on ? '' : 'opacity-90'}`}>
             <img
-              src="/assets/gallery/headlight.svg"
+              src="/assets/gallery/headlight.webp"
               alt="MT-15 V2 bi-functional LED projector headlight"
               loading="lazy"
               className={`w-full transition-all duration-700 ${on ? 'opacity-100' : 'opacity-40 grayscale'}`}

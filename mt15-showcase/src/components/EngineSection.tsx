@@ -39,8 +39,8 @@ export default function EngineSection() {
           <Reveal delay={0.1}>
             <div className="border-theme overflow-hidden border">
               <img
-                src="/assets/engine/engine.svg"
-                alt="MT-15 V2 155cc engine concept illustration"
+                src="/assets/engine/engine.webp"
+                alt="MT-15 V2 155cc engine"
                 loading="lazy"
                 className="w-full"
               />

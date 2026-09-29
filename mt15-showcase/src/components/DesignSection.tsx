@@ -23,7 +23,7 @@ export default function DesignSection() {
     <section ref={ref} className="relative h-[82vh] overflow-hidden md:h-[92vh]" aria-label="Design showcase">
       <motion.div style={{ y: reduced ? 0 : y }} className="absolute inset-[-12%]">
         <img
-          src="/assets/gallery/side.svg"
+          src="/assets/gallery/side.webp"
           alt="MT-15 V2 side profile cinematic view"
           loading="lazy"
           className="h-full w-full object-cover opacity-70"

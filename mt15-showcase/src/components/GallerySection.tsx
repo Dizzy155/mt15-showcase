@@ -2,17 +2,16 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
 
-
 const IMAGES = [
-  { src: '/assets/gallery/side.svg', alt: 'MT-15 V2 side profile' },
-  { src: '/assets/gallery/front.svg', alt: 'MT-15 V2 front view with LED projector' },
-  { src: '/assets/gallery/cockpit.svg', alt: 'MT-15 V2 cockpit and LCD display' },
-  { src: '/assets/gallery/rear.svg', alt: 'MT-15 V2 compact rear' },
-  { src: '/assets/gallery/headlight.svg', alt: 'MT-15 V2 bi-functional LED projector headlight' },
-  { src: '/assets/gallery/engine.svg', alt: 'MT-15 V2 155cc engine' },
-  { src: '/assets/gallery/wheel.svg', alt: 'MT-15 V2 17-inch wheel' },
-  { src: '/assets/gallery/exhaust.svg', alt: 'MT-15 V2 exhaust detail' },
-  { src: '/assets/gallery/tank.svg', alt: 'MT-15 V2 muscular fuel tank' },
+  { src: '/assets/gallery/side.webp', alt: 'MT-15 V2 side profile' },
+  { src: '/assets/gallery/front.webp', alt: 'MT-15 V2 front view with LED projector' },
+  { src: '/assets/gallery/cockpit.webp', alt: 'MT-15 V2 cockpit and LCD display' },
+  { src: '/assets/gallery/rear.webp', alt: 'MT-15 V2 compact rear' },
+  { src: '/assets/gallery/headlight.webp', alt: 'MT-15 V2 bi-functional LED projector headlight' },
+  { src: '/assets/gallery/engine.webp', alt: 'MT-15 V2 155cc engine' },
+  { src: '/assets/gallery/wheel.webp', alt: 'MT-15 V2 17-inch wheel' },
+  { src: '/assets/gallery/exhaust.webp', alt: 'MT-15 V2 exhaust detail' },
+  { src: '/assets/gallery/tank.webp', alt: 'MT-15 V2 muscular fuel tank' },
 ];
 
 export default function GallerySection() {

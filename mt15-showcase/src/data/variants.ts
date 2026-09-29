@@ -33,8 +33,6 @@ export interface BikeVariant {
   images: {
     hero: string;
     side: string;
-    front: string;
-    rear: string;
   };
   heroStats: HeroStat[];
 }
@@ -45,11 +43,10 @@ const baseStats: HeroStat[] = [
   { value: '6', label: 'SPEED' },
 ];
 
+// One transparent side-view render per colour, used for hero, chassis and performance panels.
 const img = (id: string) => ({
-  hero: `/assets/bikes/${id}/hero.svg`,
-  side: `/assets/bikes/${id}/side.svg`,
-  front: `/assets/bikes/${id}/front.svg`,
-  rear: `/assets/bikes/${id}/rear.svg`,
+  hero: `/assets/bikes/${id}/hero.webp`,
+  side: `/assets/bikes/${id}/hero.webp`,
 });
 
 /**
@@ -61,11 +58,11 @@ export const bikeVariants: BikeVariant[] = [
   {
     id: 'black',
     name: 'Metallic Black',
-    short: 'Stealth bodywork under cold silver light. The original dark side.',
-    swatch: ['#3a3d44', '#0e0f12'],
+    short: 'Matte gunmetal bodywork with gold forks. The original dark side.',
+    swatch: ['#4a4d53', '#101114'],
     colors: {
-      primary: '#2b2e34',
-      secondary: '#585d66',
+      primary: '#3a3d42',
+      secondary: '#6a6e75',
       accent: '#e8eaee',
       background: '#0b0c0e',
       surface: '#131418',
@@ -82,20 +79,20 @@ export const bikeVariants: BikeVariant[] = [
   {
     id: 'ice-storm',
     name: 'Ice Storm',
-    short: 'Frozen silver over deep arctic shadow. Cold, clean, clinical.',
-    swatch: ['#e2e9f1', '#7e93a8'],
+    short: 'Frozen white-silver bodywork with electric-blue wheels and graphics.',
+    swatch: ['#eef2f6', '#3b9cf0'],
     colors: {
-      primary: '#b7c1cc',
-      secondary: '#e2e9f1',
-      accent: '#a9d6ff',
+      primary: '#dfe5ec',
+      secondary: '#f4f7fa',
+      accent: '#3b9cf0',
       background: '#0c1015',
       surface: '#141a21',
       text: '#edf3f9',
       muted: '#8a97a6',
-      glow: 'rgba(169, 214, 255, 0.32)',
-      button: '#a9d6ff',
-      buttonText: '#08131f',
-      border: 'rgba(180, 210, 240, 0.14)',
+      glow: 'rgba(59, 156, 240, 0.35)',
+      button: '#3b9cf0',
+      buttonText: '#04121f',
+      border: 'rgba(90, 170, 240, 0.18)',
     },
     images: img('ice-storm'),
     heroStats: baseStats,
@@ -103,20 +100,20 @@ export const bikeVariants: BikeVariant[] = [
   {
     id: 'cyan-storm',
     name: 'Cyan Storm',
-    short: 'Electric cyan ripping across storm-dark bodywork.',
-    swatch: ['#22d3ee', '#0e3a44'],
+    short: 'Slate-grey bodywork with icy cyan wheels and graphics.',
+    swatch: ['#3fc2cc', '#3b4a55'],
     colors: {
-      primary: '#1b4a56',
-      secondary: '#2e7280',
-      accent: '#22d3ee',
+      primary: '#3b4a55',
+      secondary: '#5f9aa8',
+      accent: '#2ccbd3',
       background: '#050c0f',
       surface: '#0b161b',
       text: '#e4f7fb',
       muted: '#6f96a0',
-      glow: 'rgba(34, 211, 238, 0.35)',
-      button: '#22d3ee',
+      glow: 'rgba(44, 203, 211, 0.35)',
+      button: '#2ccbd3',
       buttonText: '#04222a',
-      border: 'rgba(34, 211, 238, 0.18)',
+      border: 'rgba(44, 203, 211, 0.18)',
     },
     images: img('cyan-storm'),
     heroStats: baseStats,
@@ -125,19 +122,19 @@ export const bikeVariants: BikeVariant[] = [
     id: 'racing-blue',
     name: 'Racing Blue',
     short: "Yamaha's factory racing DNA, straight off the paddock.",
-    swatch: ['#2a5fd0', '#0a1e4d'],
+    swatch: ['#3b4fb3', '#141c4d'],
     colors: {
-      primary: '#123d9e',
-      secondary: '#2a5fd0',
-      accent: '#4d8dff',
+      primary: '#1f2f80',
+      secondary: '#3b4fb3',
+      accent: '#5b86ff',
       background: '#060a14',
       surface: '#0d1424',
       text: '#e9f0ff',
       muted: '#7286ad',
-      glow: 'rgba(77, 141, 255, 0.35)',
-      button: '#4d8dff',
+      glow: 'rgba(91, 134, 255, 0.35)',
+      button: '#5b86ff',
       buttonText: '#06122e',
-      border: 'rgba(90, 140, 255, 0.18)',
+      border: 'rgba(100, 140, 255, 0.18)',
     },
     images: img('racing-blue'),
     heroStats: baseStats,
@@ -149,7 +146,7 @@ export const bikeVariants: BikeVariant[] = [
     swatch: ['#9eee00', '#10131a'],
     colors: {
       primary: '#12161b',
-      secondary: '#22344d',
+      secondary: '#2b3a80',
       accent: '#9eee00',
       background: '#060806',
       surface: '#0d110c',

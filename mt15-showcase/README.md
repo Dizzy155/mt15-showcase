@@ -40,18 +40,16 @@ npm run build    # type-check + production build
 
 ## Image assets
 
-`public/assets/**` contains **clearly labelled concept placeholders** (stylised
-silhouettes / technical illustrations marked "CONCEPT PLACEHOLDER"). No random
-non-MT-15 photography is used. To go live, replace them with licensed official
-renders using the same paths — no code changes required:
+`public/assets/**` now uses real MT-15 photography in `.webp` format:
 
 ```
-public/assets/bikes/<variant>/hero.svg   (transparent side render, ~1000×560)
-public/assets/bikes/<variant>/side.svg   (framed panel)
-public/assets/bikes/<variant>/front.svg  public/assets/bikes/<variant>/rear.svg
-public/assets/engine/engine.svg
-public/assets/gallery/{side,front,cockpit,rear,headlight,engine,wheel,exhaust,tank}.svg
+public/assets/bikes/<variant>/hero.webp   (transparent side/3-4 render, 1000x640 — used for hero, chassis and performance)
+public/assets/engine/engine.webp
+public/assets/gallery/{side,front,cockpit,rear,headlight,engine,wheel,exhaust,tank}.webp
 ```
+
+To replace an image, upload a file with the same name and path. Make sure you have
+the right to use every photo you publish.
 
 ## Disclaimer
 
