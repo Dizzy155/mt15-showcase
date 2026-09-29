@@ -19,7 +19,7 @@ interface HotspotDef {
 
 const HOTSPOTS: HotspotDef[] = [
   { top: '38%', left: '68%', title: '37MM USD FRONT FORK', text: 'Upside-down stanchions for precise steering response.' },
-  { top: '55%', left: '47%', title: 'DELTABOX FRAME', text: 'Yamaha's proven perimeter frame architecture.' },
+    { top: '55%', left: '47%', title: 'DELTABOX FRAME', text: "Yamaha's proven perimeter frame architecture." },
   { top: '55%', left: '30%', title: 'LINKED-TYPE MONOCROSS', text: 'Single rear shock with progressive linkage.' },
 ];
 
